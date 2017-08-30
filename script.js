@@ -3,14 +3,12 @@ console.log("testing this out!!!!!");
 //takes an array of numbers and returns the smallest number 
 //in the set.
 function findSmallestNum(arr) {   
-   arr = [3,2,5,4];
-   arr = arr.sort();
-    if (arr[0]<arr[1]){
-        return arr[0];
-    }
-    else {
-        return arr;
+//    arr = arr.sort();
+   arr.sort(function(a, b){return a-b});
+        return arr [0];
     }    
-  }
+  
 //   findSmallestNum.sort();
- console.log(findSmallestNum());
+ console.log(findSmallestNum([40, 100, 1, .5, 25, 10]));
+
+
